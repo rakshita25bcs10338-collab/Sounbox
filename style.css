@@ -1,0 +1,92 @@
+/* basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+    padding-top: 40px;
+    background: #1f2421;
+    color: #dce1de;
+    text-align:center;
+    transition: .3s;
+}
+
+/* sound grid */
+.soundboard{
+    display:grid;
+    grid-template-columns: repeat(3,150px);
+    gap:30px;
+    justify-content:center;
+    margin-bottom:40px;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    border-radius:16px;
+    padding:15px 25px;
+    background:rgba(33,105,105,0.3);
+    color:#dce1de;
+    backdrop-filter:blur(10px);
+    font-size:17px;
+    transition:.25s;
+    box-shadow:5px 5px 12px rgba(0,0,0,.4), -5px -5px 10px rgba(255,255,255,0.05);
+}
+
+button:hover{
+    transform:translateY(-3px);
+    background:rgba(73,160,120,.45);
+    box-shadow:7px 7px 14px rgba(0,0,0,.45), -4px -4px 8px rgba(200,255,200,0.1);
+}
+
+.sound-btn{
+    height:150px;
+    width:150px;
+    border-radius:22px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    font-size:18px;
+}
+
+/* extra controls */
+.controls-row{ margin-top:20px; }
+.player-controls{ margin:30px 0; }
+
+.volume-control{ margin:18px 0; }
+
+input[type="range"]{
+    width:240px;
+    height:6px;
+    border-radius:5px;
+    background:#49a078;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    appearance:none;
+    height:18px;
+    width:18px;
+    background:#216869;
+    border-radius:50%;
+    border:2px solid #9cc5a1;
+}
+
+/* theme */
+body.light{
+    background:#dce1de;
+    color:#1f2421;
+}
+
+body.light button{
+    background:rgba(156,197,161,.35);
+    color:#1f2421;
+}
+
+body.light input[type=range]{
+    background:#216869;
+}

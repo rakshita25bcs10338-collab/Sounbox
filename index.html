@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="soundboard">
+        <!-- sound buttons -->
+        <button class="sound-btn" data-sound="dog">🐶 <span>Dog</span></button>
+        <button class="sound-btn" data-sound="cat">🐱 <span>Cat</span></button>
+        <button class="sound-btn" data-sound="pop">⭐ <span>Pop</span></button>
+        <button class="sound-btn" data-sound="monkey">🐵 <span>Monkey</span></button>
+        <button class="sound-btn" data-sound="laugh">😄 <span>Laugh</span></button>
+        <button class="sound-btn" data-sound="applause">👏 <span>Applause</span></button>
+    </div>
+
+    <div class="controls-row">
+        <button id="loopBtn">Loop</button>
+        <button id="themeBtn">Theme</button>
+        <button id="randomBtn">Random</button>
+    </div>
+
+    <div class="volume-control">
+        <label for="vol">Volume:</label>
+        <input type="range" id="vol" min="0" max="1" step="0.01" value="0.5">
+    </div>
+
+    <div class="player-controls">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="stopBtn">Stop</button>
+        <button id="incVol">Vol +</button>
+        <button id="decVol">Vol -</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
